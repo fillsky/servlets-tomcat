@@ -44,6 +44,7 @@ public class EventManager {
 
         em.load();
         em.getOccurences().forEach((key, value) -> System.out.println("\n" + key + " = " + value));
+
     }
     public static EventManager getInstance() {
         return InstanceWrapper.INSTANCE;

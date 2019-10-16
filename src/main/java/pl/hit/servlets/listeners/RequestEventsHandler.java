@@ -14,6 +14,11 @@ public class RequestEventsHandler implements ServletRequestListener {
     @Override
     public void requestInitialized(ServletRequestEvent sre) {
         EventManager em = EventManager.getInstance();
+        //sre.getServletRequest().setAttribute("eventManager",  EventManager.getInstance());
+
         em.notify(EventType.REQUEST_STARTED);
+
+
+
     }
 }
